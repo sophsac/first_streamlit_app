@@ -32,8 +32,8 @@ try:
   # adds text entry box and sends the input to fruityvice as part of API call
   fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
   if not fruit_choice:
-     streamlit.error("Please select a fruit to get information.")
-   else: 
+    streamlit.error("Please select a fruit to get information.")
+  else: 
     # import requests
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
     # streamlit.text(fruityvice_response.json()) # just writes the data to the screen
