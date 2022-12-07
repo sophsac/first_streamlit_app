@@ -51,7 +51,7 @@ except URLError as e:
   streamlit.error()
 
 # dont run anything past here while we troubleshoot
-streamlit.stop()
+#streamlit.stop()
 
 # tells py file to use the library (Requirements) that's been added to the project
 # import snowflake.connector
